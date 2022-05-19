@@ -11,7 +11,7 @@
 body {
   background: #F2F2F2;
   font-family: "Roboto", Arial;
-  border-top: 30px solid #303F9F;
+  border-top: 30px solid #8e2ba1;
 }
 
 .wrapper {
@@ -39,7 +39,7 @@ body {
 .form-container .form-material .input-group input[type=text], .form-container .form-material .input-group input[type=email], .form-container .form-material .input-group input[type=password], .form-container .form-material .input-group input[type=number] {
   font-family: "Roboto", Arial;
   font-size: 16px;
-  color: #303F9F;
+  color: #8e2ba1;
   width: 100%;
   outline: none;
   padding: 15px;
@@ -50,17 +50,17 @@ body {
 }
 .form-container .form-material .input-group input[type=text]:focus, .form-container .form-material .input-group input[type=text]:active, .form-container .form-material .input-group input[type=email]:focus, .form-container .form-material .input-group input[type=email]:active, .form-container .form-material .input-group input[type=password]:focus, .form-container .form-material .input-group input[type=password]:active, .form-container .form-material .input-group input[type=number]:focus, .form-container .form-material .input-group input[type=number]:active {
   outline: none;
-  border-bottom: 2px solid #303F9F;
+  border-bottom: 2px solid #8e2ba1;
 }
 .form-container .form-material .input-group input[type=text].error, .form-container .form-material .input-group input[type=email].error, .form-container .form-material .input-group input[type=password].error, .form-container .form-material .input-group input[type=number].error {
-  border-bottom: 2px solid #d32f2f;
+  border-bottom: 2px solid #c03b3b;
   /** Label que esté debajo **/
 }
 .form-container .form-material .input-group input[type=text].error + label, .form-container .form-material .input-group input[type=email].error + label, .form-container .form-material .input-group input[type=password].error + label, .form-container .form-material .input-group input[type=number].error + label {
-  color: #d32f2f;
+  color: #c03b3b;
 }
 .form-container .form-material .input-group label {
-  color: #303F9F;
+  color: #8e2ba1;
 }
 .form-container .form-material .input-group label.label {
   position: absolute;
@@ -82,7 +82,7 @@ body {
 .form-container .form-material .input-group.checkbox label, .form-container .form-material .input-group.radio label {
   display: inline-block;
   cursor: pointer;
-  color: #303F9F;
+  color: #8e2ba1;
   position: relative;
   padding: 5px 15px 5px 51px;
   font-size: 1em;
@@ -103,16 +103,16 @@ body {
   left: 15px;
   border-radius: 50%;
   background: none;
-  border: 2px solid #303F9F;
+  border: 2px solid #8e2ba1;
 }
 .form-container .form-material .input-group.error label {
-  color: #d32f2f;
+  color: #c03b3b;
 }
 .form-container .form-material .input-group.error label:hover {
-  background: rgba(211, 47, 47, 0.2);
+  background: rgba(192, 59, 59, 0.2);
 }
 .form-container .form-material .input-group.error label:before {
-  border: 2px solid #d32f2f;
+  border: 2px solid #c03b3b;
 }
 .form-container .form-material .input-group.radio input[type=radio] {
   display: none;
@@ -122,7 +122,7 @@ body {
 }
 .form-container .form-material .input-group.radio input[type=radio]:checked + label {
   padding: 5px 15px;
-  background: #303F9F;
+  background: #8e2ba1;
   border-radius: 2px;
   color: #F2F2F2;
 }
@@ -137,13 +137,13 @@ body {
 }
 .form-container .form-material .input-group.checkbox input[type=checkbox]:checked + label {
   padding: 5px 15px;
-  background: #303F9F;
+  background: #8e2ba1;
   border-radius: 2px;
   color: #F2F2F2;
 }
 .form-container input[type=submit] {
   border: none;
-  background: #303F9F;
+  background: #8e2ba1;
   border-radius: 1px;
   color: #ffffff;
   cursor: pointer;
