@@ -14,6 +14,8 @@
      * @return boolean
      */
     function validateInputs() {
+        // Expresion Regular: Valida unicamente los caracteres numeros
+        const phoneRegExp = new RegExp(/^[0-9]*$/, 'g')
         //Recorrido de elementos del formulario
         for (let i = 0; i < formElements.length; i++) {
             //Valida el tipo de inputs
@@ -40,6 +42,13 @@
             formElements.password.className.replace('error', '');
             formElements.repeatPass.className.replace('error', '');
         }
+
+        // Valida si el input de telefono sea numerico
+        if(!phoneRegExp.test(formElements.phone.value)) {
+            formElements.phone.value = "";
+            formElements.phone.className += ' error';
+            return false;
+        } 
 
         return true;
     }

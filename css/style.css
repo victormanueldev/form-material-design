@@ -36,7 +36,7 @@ body {
   margin-bottom: 32px;
   /** Condicional para Tipos de Inputs **/
 }
-.form-container .form-material .input-group input[type=text], .form-container .form-material .input-group input[type=email], .form-container .form-material .input-group input[type=password] {
+.form-container .form-material .input-group input[type=text], .form-container .form-material .input-group input[type=email], .form-container .form-material .input-group input[type=password], .form-container .form-material .input-group input[type=number] {
   font-family: "Roboto", Arial;
   font-size: 16px;
   color: #303F9F;
@@ -48,15 +48,15 @@ body {
   border-bottom: 2px solid #BBDEFB;
   /** Anidamiento de condiciones con estados **/
 }
-.form-container .form-material .input-group input[type=text]:focus, .form-container .form-material .input-group input[type=text]:active, .form-container .form-material .input-group input[type=email]:focus, .form-container .form-material .input-group input[type=email]:active, .form-container .form-material .input-group input[type=password]:focus, .form-container .form-material .input-group input[type=password]:active {
+.form-container .form-material .input-group input[type=text]:focus, .form-container .form-material .input-group input[type=text]:active, .form-container .form-material .input-group input[type=email]:focus, .form-container .form-material .input-group input[type=email]:active, .form-container .form-material .input-group input[type=password]:focus, .form-container .form-material .input-group input[type=password]:active, .form-container .form-material .input-group input[type=number]:focus, .form-container .form-material .input-group input[type=number]:active {
   outline: none;
   border-bottom: 2px solid #303F9F;
 }
-.form-container .form-material .input-group input[type=text].error, .form-container .form-material .input-group input[type=email].error, .form-container .form-material .input-group input[type=password].error {
+.form-container .form-material .input-group input[type=text].error, .form-container .form-material .input-group input[type=email].error, .form-container .form-material .input-group input[type=password].error, .form-container .form-material .input-group input[type=number].error {
   border-bottom: 2px solid #d32f2f;
   /** Label que esté debajo **/
 }
-.form-container .form-material .input-group input[type=text].error + label, .form-container .form-material .input-group input[type=email].error + label, .form-container .form-material .input-group input[type=password].error + label {
+.form-container .form-material .input-group input[type=text].error + label, .form-container .form-material .input-group input[type=email].error + label, .form-container .form-material .input-group input[type=password].error + label, .form-container .form-material .input-group input[type=number].error + label {
   color: #d32f2f;
 }
 .form-container .form-material .input-group label {
