@@ -14,6 +14,11 @@
      * @return boolean
      */
     function validateInputs() {
+        // Expresion Regular: Valida unicamente los caracteres numeros
+        const phoneRegExp = new RegExp(/^[0-9]*$/, 'g')
+        // Expresion Regular: Valida que el texto tenga minimo 6 caracteres
+        const passwordRegExp = new RegExp(/\w{6,}/)
+        
         //Recorrido de elementos del formulario
         for (let i = 0; i < formElements.length; i++) {
             //Valida el tipo de inputs
@@ -29,6 +34,13 @@
 
         }
 
+        // Validar que la contrasena tenga minimo 6 caracteres
+        if(!passwordRegExp.test(formElements.password.value)){
+            formElements.password.value = "";
+            formElements.password.className += ' error';
+            return false;
+        }
+
         //Validar la coincidencia de las contraseñas
         if(formElements.password.value !== formElements.repeatPass.value ){
             formElements.password.value = "";
@@ -40,6 +52,13 @@
             formElements.password.className.replace('error', '');
             formElements.repeatPass.className.replace('error', '');
         }
+
+        // Valida si el input de telefono sea numerico
+        if(!phoneRegExp.test(formElements.phone.value)) {
+            formElements.phone.value = "";
+            formElements.phone.className += ' error';
+            return false;
+        } 
 
         return true;
     }
