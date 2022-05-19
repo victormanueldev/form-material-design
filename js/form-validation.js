@@ -153,6 +153,7 @@
             return
         }
         console.log('Form enviado Exitosamente')
+        console.log(e.target)
         e.preventDefault();
     });
 
